@@ -13,12 +13,12 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.js"), // replace 'src/index.js' with the path to your entry file
+      entry: path.resolve(__dirname, "src/index.js"),
       name: "jmd-react-component-lib",
       fileName: (format) => `jmd-react-component-lib.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "@emotion/react"],
       output: {
         globals: {
           react: "React",
