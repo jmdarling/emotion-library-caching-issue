@@ -1,0 +1,12 @@
+{
+  "name": "@jmd/emotion-library-caching-issue",
+  "version": "0.0.0",
+  "description": "Reproduction repo for an issue with caching occuring in libraries imported into applications leveraging emotion.",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@jmd/emotion-library-caching-issue-application"
+  }
+}

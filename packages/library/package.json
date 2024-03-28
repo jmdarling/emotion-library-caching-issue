@@ -1,0 +1,26 @@
+{
+  "name": "@jmd/emotion-library-caching-issue-library",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/jmd-react-component-lib.umd.js",
+  "module": "dist/jmd-react-component-lib.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/jmd-react-component-lib.es.js",
+      "require": "./dist/jmd-react-component-lib.es.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.11.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.11.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.2.0"
+  }
+}
